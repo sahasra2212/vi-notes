@@ -74,9 +74,9 @@ export default function TempEditor({
         onPaste={handlePaste}
         style={{
           minHeight: "250px",
-          border: "1px solid #ccc",
+          border: "3px solid #ccc",
           padding: "15px",
-          borderRadius: "10px",
+          borderRadius: "11px",
           background: "white",
           color: "black",
           outline: "none",
