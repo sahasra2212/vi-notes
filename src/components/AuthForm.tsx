@@ -1,5 +1,3 @@
-//for registration purpose
-//defined our own type named User 
 type User = {
   name: string;
   email: string;
@@ -7,10 +5,10 @@ type User = {
 };
 
 type Props = {
-  form: User;//recieves a var of type User
+  form: User;
   isRegisterMode: boolean;
   error: string;
-  updateForm: (key: keyof User, value: string) => void;//update form only it is key of user
+  updateForm: (key: keyof User, value: string) => void;
   handleAuth: () => void;
   toggleMode: () => void;
 };
@@ -22,7 +20,6 @@ export default function AuthForm({
   updateForm,
   handleAuth,
   toggleMode,
-  //  This directly extracts props intsead of using prop.gorm
 }: Props) {
   return (
     <div
@@ -33,7 +30,6 @@ export default function AuthForm({
         alignItems: "center",
         background: "#0f1220",
       }}
-      //flex-Makes inputs vertical.
     >
       <div
         style={{
@@ -53,7 +49,6 @@ export default function AuthForm({
 
         <div style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
           {isRegisterMode && (
-            //taking input
             <input
               type="text"
               placeholder="Full Name"
@@ -90,7 +85,7 @@ export default function AuthForm({
               border: "1px solid #ccc",
             }}
           />
-          
+
           {error && <p style={{ color: "red" }}>{error}</p>}
 
           <button
