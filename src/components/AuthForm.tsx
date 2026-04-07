@@ -99,7 +99,7 @@ export default function AuthForm({
               cursor: "pointer",
             }}
           >
-            {isRegisterMode ? "Register" : "Login"}
+            {isRegisterMode ? "Register Now" : "Login "}
           </button>
         </div>
 
